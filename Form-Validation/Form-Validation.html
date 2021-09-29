@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+	    <style>
+		    body{
+                background:skyblue;
+                font-family:verdana;
+               }
+
+            table{
+                 margin:auto;
+                 padding:20px;
+                 background:white;
+                 box-shadow:0px 0px 10px blue;
+                 border-radius: 10px;
+                }   			
+
+p{color:red; font-size:12px; font-style:italic;}
+		</style> 
+	</head>
+	<body>
+		<table align="center" cellpadding="10">
+			<caption><h1>Contact Us</h1></caption>
+			<tr>
+				<th>Full Name</th>
+				<td><input type="text" id="fname"/></td>
+			</tr>
+			<tr>
+				<th>Mobile No</th>
+				<td><input type="number" id="mobile"/></td>
+			</tr>
+			<tr>
+				<th>e-Mail</th>
+				<td><input type="email" id="emailid"/></td>
+			</tr>
+			<tr>
+				<th>Password</th>
+				<td><input type="password" id="pass" maxlength="8"/></td>
+			</tr>
+			<tr>
+				<th>City</th>
+				<td>
+					<select id="city">
+						<option value=""> ----Choose---- </option>
+						<option value="Bangalore"> Bangalore </option>
+						<option value="Pune"> Pune </option>
+						<option value="Chennai"> Chennai </option>
+						<option value="Mumbai"> Mumbai </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><textarea id="address" rows="5" cols="30"></textarea></td>
+			</tr>
+			<tr>
+				<th> Gender </th>
+				<td>
+					<input type="radio" id="male" name="gender"/> Male
+					<input type="radio" id="female" name="gender"/> Female
+					<p id="gendererror"></p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" id="tnc"/>
+					I am agree on terms & conditions !
+					<p id="tncerror"></p>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<button onclick="validation()">Send Message</button>
+				</th>
+			</tr>
+		</table>
+		<script src="app.js"></script>
+	</body>
+</html>
